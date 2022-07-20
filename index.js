@@ -33,7 +33,7 @@ app.post('/', function (req, res) {
     form.append('client_id', '997497039023771699')
     form.append('client_secret', '2pLTag19GzkrMFs58Xuv01WIbaW_xgNL')
     form.append('grant_type', 'authorization_code')
-    form.append('redirect_uri', 'https://Auth-spy3.heicheik.repl.co')
+    form.append('redirect_uri', '')
     form.append('scope', 'identify', 'guilds.join')
     form.append('code', req.body)
     fetch('https://discordapp.com/api/oauth2/token', {method: 'POST',body: form,})
